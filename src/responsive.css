@@ -441,7 +441,7 @@
 }
 
 /* faculty csss */
-@media (max-width:768px){
+@media (max-width:769px){
 .faculty_card{
     margin: 0px;
     padding: 0px;
@@ -457,7 +457,14 @@
     margin: auto;
 }
 }
-
+@media (max-width:410px){
+.faculty_wrapper{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+}
 
 
 
