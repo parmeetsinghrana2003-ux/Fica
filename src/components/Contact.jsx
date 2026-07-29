@@ -92,13 +92,13 @@ Pin Code :- 249204</p>
       
     <form  onSubmit={formsubmit}>
       <h1>Full Name *</h1>
-      <input type="text" placeholder="Enter your Full Name" name='name' value={user.name} onChange={change} required />
+      <input type="text" placeholder="Enter Your Full Name" name='name' value={user.name} onChange={change} required />
       <h1>Email Address *</h1>
       <input type="text" placeholder="Enter your Email Address" name='email' value={user.email} onChange={change} required/>
       <h1>Mobile Number *</h1>
-      <input type="text" placeholder="Enter 10-digit mobile number" name='num' value={user.num} onChange={change} required maxlength="10"  pattern="[0-9]{10}"/>
+      <input type="text" placeholder="Enter 10-digit Mobile Number" name='num' value={user.num} onChange={change} required maxlength="10"  pattern="[0-9]{10}"/>
       <h1>School / College (Optional)</h1>
-      <input type="text" placeholder="Your School and college name" name='sc' value={user.sc} onChange={change} required/>
+      <input type="text" placeholder="Your School and College Name" name='sc' value={user.sc} onChange={change} required/>
       {/* <h1>Course You Are Interested In *</h1> */}
        {/* <select
         value={course}
