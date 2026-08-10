@@ -9,12 +9,14 @@ import Footer from '../components/Footer'
 function About() {
   return (
     <>
-    <Navbar/>
+   <div>
+     <Navbar/>
     <Topcard/>
     <Cardcontabout/>
     <Formcontabout/>
     <Faculty/>
     <Footer/>
+   </div>
     </>
   )
 }

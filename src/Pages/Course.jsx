@@ -7,10 +7,12 @@ import Footer from '../components/Footer'
 function Course() {
   return (
    <>
-   <Navbar/>
+  <div>
+     <Navbar/>
    <Topcard/>
    <Comcourse/>
    <Footer/>
+  </div>
    </>
   )
 }

@@ -7,10 +7,12 @@ import Footer from '../components/Footer'
 function Contactus() {
   return (
     <>
-    <Navbar/>
+   <div>
+     <Navbar/>
     <Topcard/>
     <Contact/>
     <Footer/>
+   </div>
     </>
   )
 }

@@ -1,5 +1,6 @@
-import React from 'react'
-import data from '../component data/Comcoursedata'
+import React from 'react';
+import data from '../component data/Comcoursedata';
+import { Link } from "react-router-dom";
 function Comcourse() {
   return (
     <>
@@ -15,7 +16,7 @@ function Comcourse() {
    {
     data.map((abc)=>{
         return(
-        <div class="single-card">
+        <div class="single-card" key={abc.id}>
         <div class="img-area">
           <img src={abc.img} alt="IMAGE NOT FOUND"/>
         </div>
@@ -23,7 +24,11 @@ function Comcourse() {
         <div class="info">
           <h3>{abc.title}</h3>
         </div>
+        <Link to={`/course/${abc.id}`}>
+           <button> More Details</button>
+          </Link>    
       </div>
+      
         );
     })
    }

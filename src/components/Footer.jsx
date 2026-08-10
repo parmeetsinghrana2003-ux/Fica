@@ -1,26 +1,38 @@
 import React from 'react'
-
+import data from '../component data/Comcoursedata';
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
    <>
    <section class="footer">
      <div class="section1 footer1">
     <h2>Top Courses</h2>
-    <div class="firstsection">
+    {/* <div class="firstsection">
       <h4>Advance Diploma in Computer Application</h4>
       <h4>Certificate in Programming & Language Course</h4>
       <h4>Certificate in Web Designing Course</h4>
       <h4>Certificate in Digital Marketing Course</h4>
       <h4>Tally Prime Course in Rishikesh</h4>
-    </div>
+    </div> */}
+
+     {
+      data.map((abc)=>{
+        return(
+          
+          <Link to={`/course/${abc.id}`}>
+          <h3>{abc.title}</h3>
+          </Link>
+        );
+     })
+     }
   </div>
 
   <div class="section2 footer1">
     <h2>Home</h2>
     <div>
-      <h4>About</h4>
-      <h4>Courses</h4>
-      <h4>Contact Us</h4>
+    <Link to="/About"><h4>About</h4> </Link>      
+    <Link to="/course"><h4>Courses</h4> </Link> 
+    <Link to="/contact"><h4>Contact Us</h4> </Link> 
       <h4>Search</h4>
       <h4>Latest Update</h4>
     </div>

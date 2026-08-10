@@ -11,7 +11,8 @@ import Skillbased from '../components/Skillbased'
 function Home() {
   return (
    <>
-   <Navbar/>   
+   <div>
+    <Navbar/>   
    <Homecard/>
    <Skilldev/>
    <Skillbased/>
@@ -19,6 +20,7 @@ function Home() {
    <Student/>
    <Faculty/>
    <Footer/>
+   </div>
    </> 
   )
 }
