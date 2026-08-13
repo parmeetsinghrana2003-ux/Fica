@@ -46,7 +46,7 @@ function Coursetopcard() {
 </div>
 
 
-<h3 style={{fontWeight:"800"}}>Instructor</h3>
+<h3>Instructor</h3>
 <section className='fac'>
   <div className='fac1'><img src={course.fimg} alt="image not found" /></div>
   <div className='fac2'>
@@ -57,7 +57,7 @@ function Coursetopcard() {
 
 
 <div className='overview' >
-  <h3 style={{fontWeight:"800"}}>Course Overview</h3>
+  <h3>Course Overview</h3>
   <p dangerouslySetInnerHTML={{ __html: course.cp1 }}/>
   <p dangerouslySetInnerHTML={{ __html: course.cp2 }}/>
   <p dangerouslySetInnerHTML={{ __html: course.cp3 }}/>
@@ -65,7 +65,7 @@ function Coursetopcard() {
 </div>
 
 
-<h3 style={{fontWeight:"800"}}>Features of this Course</h3>
+<h3>Features of this Course</h3>
 <div className='feature'>
 {/* heading 1 */}
   <h4>{course.heading1}</h4>

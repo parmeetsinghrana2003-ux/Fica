@@ -117,13 +117,8 @@ Pin Code :- 249204</p>
       <textarea rows="6" cols="60" id="commentbox" name='comment' value={user.comment}  onChange={change} required ></textarea>
       <center><button> Submit</button></center>
     </form>
-
-
   </div>
-  
 </section>
-
-{/* map */}
     </>
   )
 }

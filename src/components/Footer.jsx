@@ -1,19 +1,13 @@
 import React from 'react'
 import data from '../component data/Comcoursedata';
 import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
    <>
    <section class="footer">
      <div class="section1 footer1">
     <h2>Top Courses</h2>
-    {/* <div class="firstsection">
-      <h4>Advance Diploma in Computer Application</h4>
-      <h4>Certificate in Programming & Language Course</h4>
-      <h4>Certificate in Web Designing Course</h4>
-      <h4>Certificate in Digital Marketing Course</h4>
-      <h4>Tally Prime Course in Rishikesh</h4>
-    </div> */}
 
      {
       data.map((abc)=>{
@@ -38,6 +32,8 @@ function Footer() {
     </div>
   </div>
 
+
+  <section className='footer222'>
   <div class="section3 footer1">
     <h2>Feature</h2>
     <div>
@@ -48,6 +44,24 @@ function Footer() {
       <h4>Regular Evaluation</h4>
     </div>
   </div>
+
+  <div>
+     <div className="responsive">
+      <div className="container">
+        <iframe
+          className="frame"
+          frameBorder="0"
+          scrolling="no"
+          marginHeight="0"
+          marginWidth="0"
+          src="https://maps.google.com/maps?width=600&height=400&hl=en&q=fica%20institute&t=h&z=17&ie=UTF8&iwloc=B&output=embed"
+          title="FICA Institute Location"
+        />
+      </div>
+   
+    </div>
+  </div>
+  </section>
   
   
 
