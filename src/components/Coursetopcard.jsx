@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import courses from '../component data/Comcoursedata';
 
 function Coursetopcard() {
@@ -125,7 +125,9 @@ function Coursetopcard() {
   ))
 }
   <h3>Limited Seat Available- Enroll early</h3>
+  <Link to="/contact">
   <center><button>Enroll Now</button></center>
+  </Link>
   </div>
 </section>
 
